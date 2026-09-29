@@ -1,0 +1,24 @@
+{
+  "name": "vef1-2026-hop1",
+  "version": "1.0.0",
+  "description": "Verður sett þegar aðferð til að keyra verkefnið verður til.\r ### Uppsetning\r Lýsing á uppsetningu verkefnis verður sett hérna þegar það er uppsetning til þess að lýsa.\r ### Nemendur\r | Nöfn | HÍ netföng | github notendanafn |\r | - | - | - |\r | Þorvaldur Hrafn | thj162@hi.is | thorvaldurhrafn | \r | Marijonas Valdas Vark |  | MJ-VV06  |",
+  "homepage": "https://github.com/MJ-VV06/vef1-2026-hop1#readme",
+  "bugs": {
+    "url": "https://github.com/MJ-VV06/vef1-2026-hop1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJ-VV06/vef1-2026-hop1.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "prettier": "^3.9.9",
+    "stylelint": "^17.15.0"
+  }
+}
