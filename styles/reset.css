@@ -1,0 +1,7 @@
+/**
+ * Fjarlægja gefið margin og padding af öllu.
+ */
+* {
+  padding: 0;
+  margin: 0;
+}

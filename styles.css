@@ -1,0 +1,12 @@
+/** config/ breyttur css skjalli efst
+*/
+
+@import url('./styles/forsidaConfig.css');
+
+
+/** base hlutir eins og reset, letur og fleira ef það kemur
+*/
+@import url('./styles/reset.css');
+
+/** restinn af css
+*/
