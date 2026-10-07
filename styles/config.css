@@ -1,0 +1,19 @@
+:root {
+/* Font stuff that simply doesn't work*/
+--font-family-base: Inter;
+--font-weight: 400;
+--font-size-base: 2rem;
+--line-height: 1.5rem;
+--letter-spacing: 0%;
+
+    
+
+
+/* Colours*/
+--background-colour: #FFFFFF;
+--header-colour: #171717;
+--font-colour: #525252;
+--font-colour-alt: #6941C6;
+--button-colour: #7F56D9;
+--font-background-colour: #F9F5FF;
+}
