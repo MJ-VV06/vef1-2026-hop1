@@ -1,3 +1,26 @@
 :root {
+    --mobile-h1-size-forsida: 2.25rem; /*36px*/
+    --computer-h1-size-forsida: 4.5rem; /*36px*/
+
+    --mobile-h2-size-forsida: 1.875rem; /*30px*/
+    --computer-h2-size-forsida: 1                     /*30px*/
+
+    --mobile-h3-size-forsida: 1.25rem; /*20px*/
+    --computer-h3-size-forsida: 1.25rem; /*20px*/
+
+    --mobile-h4-size-forsida: 1.125rem; /*18px*/
+    --computer-h4-size-forsida: 1.125rem; /*18px*/
     
+    --mobile-h5-size-forsida: 0.875; /*14px*/
+    --computer-h5-size-forsida: 1rem; /*16px*/
+
+    --mobile-p-size-forsida: 1rem; /*16px*/
+    --computer-p-size-forsida: 1rem; /*16px*/
+
+    --mobile-button-size-forsida: 1rem; /*16px*/
+    --computer-button-size-forsida: 1rem; /*16px*/
+
+    
+
+
 }

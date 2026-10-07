@@ -207,11 +207,11 @@
       });
     }
   }
-})({"7jUhU":[function(require,module,exports,__globalThis) {
+})({"bbQvA":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 50844;
+var HMR_SERVER_PORT = 60889;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
@@ -715,6 +715,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"j4kuM":[function(require,module,exports,__globalThis) {
 
-},{}]},["7jUhU","j4kuM"], "j4kuM", "parcelRequire1e00", {})
+},{}]},["bbQvA","j4kuM"], "j4kuM", "parcelRequire1e00", {})
 
 //# sourceMappingURL=vef1-2026-hop1.3464ddca.js.map
