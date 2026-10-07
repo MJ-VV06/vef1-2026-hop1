@@ -1,0 +1,35 @@
+:root {
+    --display-2xl-fontsize-big: 5.625rem; /*90px*/
+    --display-2xl-fontsize-small: 4.5rem; /*72px*/
+
+    --display-xl-fontsize-big: 4.5rem; /*72px*/
+    --display-xl-fontsize-small: 3.75rem; /*60px*/
+    
+    --display-lg-fontsize-big: 3.75rem; /*60px*/
+    --display-lg-fontsize-small: 3rem; /*48px*/
+
+    --display-md-fontsize-big: 2.75rem; /*44px*/
+    --display-md-fontsize-small: 2.25rem; /*36px*/
+
+    --display-sm-fontsize-big: 2.375rem; /*38px*/
+    --display-sm-fontsize-small: 1.875rem; /*30px*/
+
+    --display-xs-fontsize-big: 2rem; /*32px*/
+    --display-xs-fontsize-small: 1.5rem; /*24px*/
+
+    --text-xl-fontsize-big: 1.875rem; /*30px*/
+    --text-xl-fontsize-small: 1.25rem; /*20px*/
+    
+    --text-lg-fontsize-big: 1.75rem; /*28px*/
+    --text-lg-fontsize-small: 1.125rem; /*18px*/
+
+    --text-md-fontsize-big: 1.5rem; /*24px*/
+    --text-md-fontsize-small: 1rem; /*16px*/
+
+    --text-sm-fontsize-big: 1.25rem; /*20px*/
+    --text-sm-fontsize-small: 0.875em; /*14px*/
+
+    --text-xs-fontsize-big: 1.125rem; /*18px*/
+    --text-xs-fontsize-small: 0.75rem; /*12px*/
+
+}
