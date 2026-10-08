@@ -7,3 +7,5 @@ Lýsing á uppsetningu verkefnis verður sett hérna þegar það er uppsetning 
 | - | - | - |
 | Þorvaldur Hrafn | thj162@hi.is | thorvaldurhrafn | 
 | Marijonas Valdas Vark |  | MJ-VV06  |
+|   |   |
+dsfa

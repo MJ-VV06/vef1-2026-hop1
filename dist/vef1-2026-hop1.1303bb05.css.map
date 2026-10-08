@@ -1,1 +1,0 @@
-{"mappings":"AAGA","sources":["styles/reset.css"],"sourcesContent":["/**\r\n * Fjarlægja gefið margin og padding af öllu.\r\n */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n"],"names":[],"version":3,"file":"vef1-2026-hop1.1303bb05.css.map","sourceRoot":"/__parcel_source_root/"}
