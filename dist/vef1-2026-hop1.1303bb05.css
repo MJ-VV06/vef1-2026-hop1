@@ -1,0 +1,30 @@
+:root {
+  --display-2xl-fontsize-big: 5.625rem;
+  --display-2xl-fontsize-small: 4.5rem;
+  --display-xl-fontsize-big: 4.5rem;
+  --display-xl-fontsize-small: 3.75rem;
+  --display-lg-fontsize-big: 3.75rem;
+  --display-lg-fontsize-small: 3rem;
+  --display-md-fontsize-big: 2.75rem;
+  --display-md-fontsize-small: 2.25rem;
+  --display-sm-fontsize-big: 2.375rem;
+  --display-sm-fontsize-small: 1.875rem;
+  --display-xs-fontsize-big: 2rem;
+  --display-xs-fontsize-small: 1.5rem;
+  --text-xl-fontsize-big: 1.875rem;
+  --text-xl-fontsize-small: 1.25rem;
+  --text-lg-fontsize-big: 1.75rem;
+  --text-lg-fontsize-small: 1.125rem;
+  --text-md-fontsize-big: 1.5rem;
+  --text-md-fontsize-small: 1rem;
+  --text-sm-fontsize-big: 1.25rem;
+  --text-sm-fontsize-small: .875em;
+  --text-xs-fontsize-big: 1.125rem;
+  --text-xs-fontsize-small: .75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=vef1-2026-hop1.1303bb05.css.map */
