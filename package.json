@@ -14,7 +14,10 @@
   "author": "",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
+    "build": "parcel build index.html 'sidur/*.html'",
+    "lint": "prettier '**/*.{css,html}' --write",
+    "lint:fix": "stylelint '**/*.{css,scss}' --fix"
   },
   "dependencies": {
     "parcel": "^2.16.4",

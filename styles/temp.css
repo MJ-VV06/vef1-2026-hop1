@@ -1,0 +1,33 @@
+/* temp css síða ef þið viljið breytta og prófa eitthvað, þegar við erum búin með verkefnið verður þetta eytt*/
+:root {
+  --grid-color: hsl(255deg 75% 75% / 25%);
+  --grid-repeating-width: calc(100% / var(12));
+  --grid-column-width: calc((100% / var(12)) - var(20px));
+  --grid-background-width: calc(100% + var(20px));
+  --grid-background-columns: repeating-linear-gradient(
+    to right,
+    var(--grid-color),
+    var(--grid-color) var(--grid-column-width),
+    transparent var(--grid-column-width),
+    transparent var(--grid-repeating-width)
+  ); 
+}
+
+html {
+  position: relative;
+}
+
+html::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  width: calc(100% - (2 * var(20px)));
+  max-width: var(1100px);
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  pointer-events: none;
+  content: "";
+  background-image: var(--grid-background-columns);
+  background-size: var(--grid-background-width) 100%;
+}

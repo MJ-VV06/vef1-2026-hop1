@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../fonts/Inter.ttf") format("truetype");
+}
+
+a {
+  color: inherit;
+}
+
+input,
+button,
+select,
+textarea {
+  font-size: inherit;
+}
+
+
+body {
+   font-family: var(--font-family-gen);
+}
+
+
+/*texti general*/
+
+h1 {
+    font-family: var(--font-family-gen);  
+    font-size: var(--display-md-fontsize);
+    font-weight: var(--font-weight-semibold);   
+    color: var(--font-color-head);
+    line-height: 44px;
+    letter-spacing: -2%;
+    text-align: center;
+
+}
+h2 {
+    font-family: var(--font-family-gen);  
+    font-size: var(--display-sm-fontsize);
+    font-weight: var(--font-weight-medium);
+    color: var(--font-color-head);
+    font-family: Inter;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+h3 {
+    font-family: var(--font-family-gen);  
+    font-size: var(--display-sm-fontsize);
+    font-weight: var(--font-weight-semibold);
+    color: var(--font-color-head);
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+h4 {
+    font-family: var(--font-family-gen);  
+    font-size: var(--text-lg-fontsize);
+    font-weight: var(--font-weight-medium);
+    color: var(--font-color-head);
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+h5 {
+    font-family: var(--font-family-gen);  
+    font-size: var(--text-md-fontsize);
+    font-weight: var(--font-weight-regular);
+    color: var(--font-color-text);
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+h6 {
+    font-family: var(--font-family-gen);  
+    font-size: var(--text-sm-fontsize);
+    font-weight: var(--font-weight-semibold);
+    color: var(--font-color-smallhead);
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+p {
+    font-family: var(--font-family-gen);  
+    font-size: var(--text-xl-fontsize);
+    font-weight: var(--font-weight-regular);
+    color: var(--font-color-text); 
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+}  
+@media (width > 500px){
+    h1 {
+        font-size: var(--display-xl-fontsize); 
+        line-height: 72px;
+    }
+
+    h2 {
+        font-size: var(--display-lg-fontsize);
+        line-height: 60px;
+    }
+
+    h3 {
+        font-size: var(--display-md-fontsize);
+        line-height: 44px;
+    }
+
+    h4 {
+        font-size: var(--text-xl-fontsize);
+        line-height: 30px; 
+    }
+    h5 {
+        line-height: 24px; 
+    }
+    h6 {
+        line-height: 24px; 
+    }
+    p {
+        line-height: 30px;
+    }
+
+}
