@@ -1,15 +1,14 @@
 /** config/ breyttur css skjalli efst
 */
 
-@import url('./styles/tempConfig.css');
-
+@import url("./styles/tempConfig.css");
 
 /** base hlutir eins og reset, letur og fleira ef það kemur
 */
-@import url('./styles/reset.css');
-@import url('./styles/font.css');
-@import url('./styles/temp.css');
+@import url("./styles/reset.css");
+@import url("./styles/font.css");
+@import url("./styles/temp.css");
 
 /** restinn af css
 */
-@import url('./styles/forsida.css');
+@import url("./styles/forsida.css");

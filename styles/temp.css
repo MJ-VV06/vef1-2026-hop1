@@ -1,4 +1,4 @@
-/* temp css síða ef þið viljið breytta og prófa eitthvað, þegar við erum búin með verkefnið verður þetta eytt*/
+/* temp css síða ef þið viljið breytta og prófa eitthvað, þegar við erum búin með verkefnið verður þetta eytt */
 :root {
   --grid-color: hsl(255deg 75% 75% / 25%);
   --grid-repeating-width: calc(100% / 12);
@@ -10,7 +10,7 @@
     var(--grid-color) var(--grid-column-width),
     transparent var(--grid-column-width),
     transparent var(--grid-repeating-width)
-  ); 
+  );
 }
 
 html {
