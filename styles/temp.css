@@ -1,9 +1,9 @@
 /* temp css síða ef þið viljið breytta og prófa eitthvað, þegar við erum búin með verkefnið verður þetta eytt*/
 :root {
   --grid-color: hsl(255deg 75% 75% / 25%);
-  --grid-repeating-width: calc(100% / var(12));
-  --grid-column-width: calc((100% / var(12)) - var(20px));
-  --grid-background-width: calc(100% + var(20px));
+  --grid-repeating-width: calc(100% / 12);
+  --grid-column-width: calc((100% / 12) - 20px);
+  --grid-background-width: calc(100% + 20px);
   --grid-background-columns: repeating-linear-gradient(
     to right,
     var(--grid-color),
@@ -21,8 +21,8 @@ html::before {
   position: absolute;
   inset: 0;
   z-index: 1000;
-  width: calc(100% - (2 * var(20px)));
-  max-width: var(1100px);
+  width: calc(100% - (2 * 20px));
+  max-width: 1100px;
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
