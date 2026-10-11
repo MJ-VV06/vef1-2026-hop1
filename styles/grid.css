@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+.grid-1 > *{
+    grid-column: span var(--grid-columns);
+    width: 100%;
+}
+
+.grid-2 > *{
+    grid-column: span var(--grid-columns);
+    width: 100%;
+}
+
+.grid-3 > *{
+    grid-column: span var(--grid-columns);
+    width: 100%;
+}
+
+.grid-4  > *{
+    grid-column: span var(--grid-columns);
+    width: 100%;
+}
+
+.grid-5  > *{
+    grid-column: span var(--grid-columns);
+    width: 100%;
+}
+
+.grid-6  > *{
+    grid-column: span var(--grid-columns);
+    width: 100%;
+}
+
+@media (width > 500px) {
+    .container {
+         display: grid;
+        grid-template-columns: repeat(var(--grid-columns), 1fr);
+        gap: var(--spacing-double);
+    }
+
+    .grid-1 > *{
+        grid-column: span var(--grid-columns);
+    }
+
+    .grid-2 > *{
+        grid-column: span calc(var(--grid-columns)/2);
+    }
+
+    .grid-3 > *{
+        grid-column: span calc(var(--grid-columns)/3);
+    }
+
+    .grid-4  > *{
+        grid-column: span calc(var(--grid-columns)/4);
+    }
+
+    .grid-6  > *{
+        grid-column: span calc(var(--grid-columns)/6);
+    }  
+}

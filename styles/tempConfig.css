@@ -24,6 +24,7 @@
 
   /* spacing stuff, er að gíska að hlutir eru spaced með 8 margföldun töflu */
   --spacing: 16px;
+  --spacing-fourth: calc(var(--spacing)/4);
   --spacing-half: calc(var(--spacing)/2);
   --spacing-half-larger: calc(var(--spacing) * 1.5);
   --spacing-double: calc(var(--spacing) * 2);
