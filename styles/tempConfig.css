@@ -1,0 +1,53 @@
+/* temp config, testa hluti herna fyrst og svo fara i main config.css */
+
+:root {
+  /* allt tengd fonts */
+  --font-family-gen: inter, helvetica, arial, sans-serif;
+  --display-2xl-fontsize: 4.5rem; /* 72px */
+  --display-xl-fontsize: 3.75rem; /* 60px */
+  --display-lg-fontsize: 3rem; /* 48px */
+  --display-md-fontsize: 2.25rem; /* 36px */
+  --display-sm-fontsize: 1.875rem; /* 30px */
+  --display-xs-fontsize: 1.5rem; /* 24px */
+  --text-xl-fontsize: 1.25rem; /* 20px */
+  --text-lg-fontsize: 1.125rem; /* 18px */
+  --text-md-fontsize: 1rem; /* 16px */
+  --text-sm-fontsize: 0.875rem; /* 14px */
+  --text-xs-fontsize: 0.75rem; /* 12px */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-color-head: #171717;
+  --font-color-text: #737373;
+  --font-color-smallhead: #6941c6;
+  --font-background-smallhead: #f9f5ff;
+
+  /* spacing stuff, er að gíska að hlutir eru spaced með 8 margföldun töflu */
+  --spacing: 16px;
+  --spacing-eighth: calc(var(--spacing)/8);
+  --spacing-fourth: calc(var(--spacing)/4);
+  --spacing-half: calc(var(--spacing)/2);
+  --spacing-half-larger: calc(var(--spacing-half) * 1.5);
+  --spacing-double: calc(var(--spacing) * 2);
+  --spacing-double-larger: calc(var(--spacing-double) * 1.25);
+  --spacing-triple: calc(var(--spacing) * 3);
+  --spacing-quad: calc(var(--spacing) * 4);
+
+  /* grid stuff */
+  --grid-columns: 12;
+
+  /* takki stuff */
+  --button-text-color-1: #fff;
+  --button-text-color-2: #404040;
+  --button-background-color-1: #7f56d9;
+  --button-background-color-2: #fff;
+  --button-border-color-2: #d4d4d4;
+  --border-raidus: 8px;
+  --border-raidus-double: calc(var(--border-raidus) * 2);
+  --button-border-width: 1px;
+
+  /* litir */
+  --website-background: #fff;
+  --website-background-2: #fafafa;
+}

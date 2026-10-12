@@ -1,0 +1,15 @@
+/* Takkar og allt þannig tengd */
+button {
+  width: 100%;
+  padding: var(--spacing-half-larger)
+    calc(var(--spacing-half-larger) + var(--spacing-half));
+  border-radius: var(--border-raidus);
+  border-width: var(--button-border-width);
+  border-color: var(--button-text-color-1);
+  opacity: 1;
+  color: var(--button-text-color-1);
+  background-color: var(--button-background-color-1);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-gen);
+  font-size: var(--text-md-fontsize);
+}
