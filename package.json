@@ -14,11 +14,17 @@
   "author": "",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
+    "build": "parcel build index.html 'sidur/*.html'",
+    "lint": "prettier '**/*.{css,html}' --write",
+    "lint:fix": "stylelint '**/*.{css,scss}' --fix"
   },
   "dependencies": {
     "parcel": "^2.16.4",
-    "prettier": "^3.9.9",
-    "stylelint": "^17.15.0"
+    "prettier": "^3.9.9"
+  },
+  "devDependencies": {
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }
