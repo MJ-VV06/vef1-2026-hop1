@@ -11,7 +11,6 @@
 .grid-5 > *,
 .grid-6 > * {
   grid-column: span var(--grid-columns);
-  width: 100%;
 }
 
 @media (width > 500px) {
