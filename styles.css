@@ -12,4 +12,5 @@
 
 /** restinn af css
 */
+@import url("./styles/util.css");
 @import url("./styles/forsida.css");

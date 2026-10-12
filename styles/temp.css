@@ -1,5 +1,6 @@
 /* temp css síða ef þið viljið breytta og prófa eitthvað, þegar við erum búin með verkefnið verður þetta eytt */
-:root {
+
+/* :root {
   --grid-color: hsl(255deg 75% 75% / 25%);
   --grid-repeating-width: calc(100% / 12);
   --grid-column-width: calc((100% / 12) - 20px);
@@ -31,3 +32,4 @@ html::before {
   background-image: var(--grid-background-columns);
   background-size: var(--grid-background-width) 100%;
 }
+*/

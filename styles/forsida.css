@@ -1,4 +1,199 @@
-/* css fyrir bara forsidu, ef ekkert then delete */
+/* Forsíða, allt sem ætti að vera eins across alla forsíðuna */
+.forsida {
+  background-color: var(--website-background);
+}
+
+.forsida section {
+  padding: var(--spacing-quad) var(--spacing);
+}
+
+.forsida hr {
+  margin-inline: var(--spacing);
+}
+
+/* Fyrsti hlutur forsíðu */
+
 .hero {
-    padding: var(--spacing-quad) 0;
+  row-gap: var(--spacing-quad);
+}
+
+.hero img { /* skalanlegt á milli 1-500px */
+  display: block; 
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-double);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+/* features fyrir bæði skipti */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-triple);
+}
+
+.features-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.features-nafn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-half-larger);
+}
+
+.features-cards {
+  row-gap: var(--spacing-double-larger);
+}
+
+.features-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* qoute parturinn hjá jón jón */
+
+.qoute {
+  background-color: var(--website-background-2);
+}
+
+.qoute-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-double-larger);
+}
+
+.qoute-img { /* á mobile er þetta um það bil stærð logo */
+  width: 50%;
+}
+
+.qoute-man { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.qoute-man-mynd { /* Figma segir fixed 64px */
+  width: 64px;
+  height: 64px;
+  border-radius: 200px; /* eins á bæði mobile og desk */
+  background: #a2a8cd; /* ég hélt þetta var partur af mynda, apperanlty ekki */
+}
+
+.qoute-man-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-fourth);
+}
+
+/* seinni features partur af forsíðuna */
+
+.feature-background{ /* ætti kannski að fá öðruvísi nafn, en er bara fjölublái hlutur fyrir aftan texta */
+  /* allt þetta skiptir mál, af hverju?, það virkar bara */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: var(--font-background-smallhead);
+  padding: var(--spacing-eighth)
+    calc(var(--spacing-eighth) + var(--spacing-half));
+  border-radius: var(--border-raidus-double);
+}
+
+/* sími hluturin, á efitr að fatta hvernig á að hafa það undir textan */
+.simi {
+  display: flex;
+  justify-content: center;
+}
+
+.simi-mynd{
+  display: block;
+  width: 75%;
+  height: auto;
+}
+
+/* fyrirtæki partur er smá öðruvísi */
+.features-fyrirtaeki .features-header {
+  align-items: center;
+  text-align: center;
+}
+
+.features-fyrirtaeki .features-cards {
+  row-gap: var(--spacing-triple);
+}
+
+.features-fyrirtaeki .features-card {
+  gap: var(--spacing);
+}
+
+.features-card-text {
+  display: grid;
+  row-gap: var(--spacing-fourth);
+}
+
+.features-link {
+  text-decoration: none;
+}
+
+.features-fyrirtaeki h6 {
+  font-size: var(--text-md-fontsize);
+}
+
+/* cta hluturinn (veit ekki hvað cta stendur fyrir en það er á vefsíðuna) */
+.cta {
+  background-color: var(--website-background-2);
+}
+
+.cta-content,
+.cta-text,
+.cta-takki {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-content {
+  gap: var(--spacing-double);
+  text-align: center;
+}
+
+.cta-text {
+  gap: var(--spacing);
+}
+
+.cta-takki {
+  gap: var(--spacing-half);
+}
+
+/* hinn takki style, kannski ætti að fara á util.css */
+
+.takki-2 {
+  background-color: var(--button-background-color-2);
+  color: var(--button-text-color-2);
+  border-color: var(--button-border-color-2);
+  border-width: var(--button-border-width);
+}
+
+@media (width > 500px) {
+  .simi {
+    display: none;
+  }
 }
