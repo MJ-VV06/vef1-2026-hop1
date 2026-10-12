@@ -17,7 +17,7 @@
   row-gap: var(--spacing-quad);
 }
 
-.hero img { /* skalanlegt á milli 1-500px */
+.hero img { /* skalanlegt */
   display: block; 
   width: 100%;
   height: auto;
@@ -125,6 +125,10 @@
   justify-content: center;
 }
 
+.spjaldtalva-mynd {
+  display: none;
+}
+
 .simi-mynd{
   display: block;
   width: 75%;
@@ -193,7 +197,83 @@
 }
 
 @media (width > 500px) {
+  .forsida section {
+    max-width: 80rem;
+    margin-inline: auto;
+    padding: calc(var(--spacing-double) + var(--spacing-quad)) var(--spacing-double);
+  }
+
+  .forsida .hero {
+    padding-bottom: 0;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 64rem;
+    align-self: center;
+    row-gap: calc(var(--spacing) + var(--spacing-half));
+  } 
+
+  .hero-content {
+    gap: var(--spacing-triple);
+  }
+
+  .hero-content button { /* skalar með textan */
+    width: fit-content;
+    align-self: center;  
+  }
+
+  .features {
+    row-gap: var(--spacing-quad);
+  }
+
+  .features-header {
+    width: 100%;
+    max-width: 48rem; 
+    align-self: center;
+    row-gap: calc(var(--spacing-half) + var(--spacing-half-larger));
+  }
+
+.features-cards {
+    gap: var(--spacing-quad) var(--spacing-double);
+  }
+
+  .features-card {
+    gap: calc(var(--spacing-half) + var(--spacing-half-larger));
+  }
+
+  .features-card-text {
+    gap: var(--spacing-half);
+  }
+
+  .qoute {
+    width: 100%;
+    max-width: 76rem;
+    align-self: center;
+  }
+
+  .qoute-img {
+    width: 100%;
+    max-width: 10rem;
+    align-self: center;
+  }
+
   .simi {
-    display: none;
+    width: 244px;
+  }
+
+  .spjaldtalva-mynd {
+    display: block;
+  }
+
+  .cta-takki {
+    flex-direction: row-reverse;      
+    gap: var(--spacing-half-larger);  
+    width: fit-content;
+    align-self: center;
+  }
+
+  .cta-takki button {
+    width: auto;                     
   }
 }
