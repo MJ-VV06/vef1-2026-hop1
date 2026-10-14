@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="is">
-<head></head>
-<body>
-    <main><div>  <!--Þetta er hvert allt fer-->
+<head>
+    
+    <!-- Takk fyrir meta stöffið Marijónas ;) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skráning</title>
 
 
-        <header>
+    <!--css-->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="skraningbody">
+    <main>  <!--Þetta er hvert allt fer-->
+     
+        <div class="headerdivvv">
+         <div class="skraninglogoo">
+          <div>
+           <img class="skraninglogo" src="../myndir/Logos/CompanyLogoNemaSVG.svg" alt="Firmamerki fyrirtækisins">
+          </div>
+          <div class="skraningtitle">
+            <h2 class="displayxs">Skráðu þig inn</h2>
+            <h5>Velkomin aftur í Forritið.</h5>
+           </div>
+        </div>
+        <div class="skraningcontent"> <!-- Content -->
+
             
-            <div> <!-- Logomark -->
-                <img src="../myndir/Logos/CompanyLogoNemaSVG.svg" alt="Firmamerki fyrirtækisins">
-            </div>
-            <h2>Skráðu þig inn</h2>
-            <p>Velkomin aftur í Forritið.</p>
-        
-        </header>
-        <div> <!-- Content -->
-
-            <form>
-                <div>
+                <form>
                     <div> <!-- Form -->
-                        <label for="email">Netfang</label><br>
+                        
+                        <label for="email">Netfang</label>
                         <input type="email" id="email" name="email" placeholder="Skráðu netfangið þitt"/>
+                        <h6>This is a hint text to help user.</h6>
+                        
                     </div>
                     <div>
-                        <label for="email">Lykilorð</label><br>
-                        <input type="password" id="lykilord" name="lykilord" placeholder="••••••••"/>
+                        
+                        <label for="email">Lykilorð</label>
+                        <input type="password" id="lykilord" name="lykilord" placeholder="••••••••" class="formm">
+                        <h6>This is a hint text to help user.</h6>
+                        
                     </div>
-                </div>
-                <div> <!-- Row -->
+                </form>
+                <div class="rowrowtwo"> <!-- Row -->
+                    <div>
                     <input type="checkbox" id="rememberme" name="rememberme"/>
                     <label>Mundu eftir mér í 30 daga</label>
-                    
-                    <a href="">Gleymt lykilorð</a>
+                    </div>
+                    <a href=""><h6>Gleymt lykilorð</h6></a>
                 </div>
-                <div> <!-- Actions -->
+                <div class="skraningaction"> <!-- Actions -->
                     <button>Innskráning</button>
-                    <button><img src="../myndir/Logos/Google Icon.svg" alt="Firmamerki Google">Skráning með Google</button>
+                    <button class="takki-2"><img src="../myndir/Logos/Google-Icon.svg" alt="Firmamerki Google">     Innskráning með Google</button>
                 </div>
-            </form>
+            
             
         </div>
-        <div> <!-- Row -->
-        <p>Ekki með aðgang? <a href="">Skráðu þig</a></p>
-        </div>
-</main>
+        <div class="skraningfinal"> <!-- Row -->
+            
+        <p>Ekki með aðgang?</p> <a href="">Skráðu þig</a>
+      </div>
+       
+    </main>
 </body> <!-- Það verður enginn footer í þessari síður samkvæmt fyrirmælum -->
 </html> 
