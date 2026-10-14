@@ -213,6 +213,10 @@
     align-self: center;
     row-gap: calc(var(--spacing) + var(--spacing-half));
   } 
+  
+  .hero-mynd {
+    position: relative;
+  }
 
   .hero-content {
     gap: var(--spacing-triple);
@@ -225,6 +229,7 @@
 
   .features {
     row-gap: var(--spacing-quad);
+    z-index: 10;
   }
 
   .features-header {
