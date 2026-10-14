@@ -25,19 +25,21 @@
 
   /* spacing stuff, er að gíska að hlutir eru spaced með 8 margföldun töflu */
   --spacing: 16px;
-  --spacing-slightly-larger: calc(var(--spacing) * 1.25);            /* 20px */
-  --spacing-larger: calc(var(--spacing) * 1.5);                      /* 24px */
-  --spacing-eighth: calc(var(--spacing)/8);                          /* 2px */
-  --spacing-fourth: calc(var(--spacing)/4);                          /* 4px */
-  --spacing-fourth-larger: calc(var(--spacing-fourth) * 1.5);        /* 6px */
-  --spacing-half: calc(var(--spacing)/2);                            /* 8px */
-  --spacing-half-majorly-larger: calc(var(--spacing-half) * 1.75);   /* 14px */
-  --spacing-half-slightly-larger: calc(var(--spacing-half) * 1.25);  /* 10px */
-  --spacing-half-larger: calc(var(--spacing-half) * 1.5);            /* 12px */
-  --spacing-double: calc(var(--spacing) * 2);                        /* 32px */
-  --spacing-double-larger: calc(var(--spacing-double) * 1.25);       /* 40px */
-  --spacing-triple: calc(var(--spacing) * 3);                        /* 48px */
-  --spacing-quad: calc(var(--spacing) * 4);                          /* 64px */
+  --spacing-hex: calc(var(--spacing) * 6);                               /* 96px */
+  --spacing-quad: calc(var(--spacing) * 4);                              /* 64px */
+  --spacing-triple: calc(var(--spacing) * 3);                            /* 48px */
+  --spacing-double-larger: calc(var(--spacing-double) * 1.25);           /* 40px */
+  --spacing-double: calc(var(--spacing) * 2);                            /* 32px */
+  --spacing-larger: calc(var(--spacing) * 1.5);                          /* 24px */
+  --spacing-slightly-larger: calc(var(--spacing) * 1.25);                /* 20px */
+  --spacing-fourth-larger-triple: calc(var(--spacing-fourth-larger) * 3);/* 18px */
+  --spacing-half-majorly-larger: calc(var(--spacing-half) * 1.75);       /* 14px */
+  --spacing-half-larger: calc(var(--spacing-half) * 1.5);                /* 12px */
+  --spacing-half-slightly-larger: calc(var(--spacing-half) * 1.25);      /* 10px */
+  --spacing-half: calc(var(--spacing)/2);                                /* 8px */
+  --spacing-fourth-larger: calc(var(--spacing-fourth) * 1.5);            /* 6px */
+  --spacing-fourth: calc(var(--spacing)/4);                              /* 4px */
+  --spacing-eighth: calc(var(--spacing)/8);                              /* 2px */
 
   /* grid stuff */
   --grid-columns: 12;

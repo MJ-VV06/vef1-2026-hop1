@@ -1,3 +1,7 @@
+/*
+* Síðan er ekki millistillt á stærri skjáum af einhverri ástæðu, ég þarf að laga þetta áður en ég myndi merge-a þetta í main.
+*
+*/
 .skraningbody {
     display: grid;
     grid-template-columns: var(--grid-columns);
@@ -18,40 +22,58 @@ form div h6 {
     display: none;
 }
 
+form div label {
+    font-size: var(--text-sm-fontsize);
+    align-self:flex-start
+}
+
 .skraningcontent div {
     width: var(--fullwidth);
 }
 
-.rowrowtwo {
-    display: flex;
-    align-items: baseline;
-}
 
 .rowrowtwo div {
     display: flex;
-    gap: var(--spacing-half)
+    gap: var(--spacing-half);
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.rowrowtwo div label {
+font-size: var(--text-sm-fontsize);
+}
+
+.rowrowtwo a {
+    font-size: var(--text-sm-fontsize);
+    text-decoration: none;
 }
 
 .skraningbody main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
     gap: var(--spacing-double);
     grid-column: span var(--grid-columns);
 }
 
 
-.skraningbody main div { 
+.headerdivvv div {
     grid-column: span var(--grid-columns);
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.skraningbody main div div {
-    grid-column: span var(--grid-columns);
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-half);
     
 }
+
+.skraningbody main div { 
+    grid-column: span var(--grid-columns);
+    align-items: center;
+    
+}
+
+
+
 
 .headerdivvv {
     display: flex;
@@ -82,10 +104,6 @@ form {
 }
 
 
-form div label {
-    font-size: var(--text-sm-fontsize);
-    align-self:flex-start
-}
 
 form div input {
     width: var(--fullwidth);
@@ -105,9 +123,54 @@ form div input ::placeholder {
     letter-spacing: 0%;
 }
 
+.rowrowtwo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
 
-@media (width >600px) 
+.skraningaction {
+    gap: var(--spacing);
+    display: flex;
+    flex-direction: column;
+}
+
+.skraningaction button {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-half-slightly-larger) var(--spacing-fourth-larger-triple);
+    gap: var(--spacing-half);
+}
+
+.skraningfinal {
+    display: flex;
+    gap: var(--spacing-fourth);
+    justify-content: center;
+}
+
+.skraningfinal p {
+    font-size: var(--text-sm-fontsize);
+
+}
+
+.skraningfinal a {
+    font-size: var(--text-sm-fontsize);
+    color: var(--font-color-smallhead);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+}
+
+@media (width >500px) 
 {
+    .skraningbody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
     .displayxs {
         font-size: var(--display-sm-fontsize);
     }
