@@ -95,10 +95,6 @@ p {
 }
 
 @media (width > 500px) {
-  main {
-    padding: var(--spacing-hex) var(--spacing-double) var(--spacing-triple) var(--spacing-double);
-  }
-
   h1 {
     font-size: var(--display-xl-fontsize);
     line-height: 72px;
