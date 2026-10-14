@@ -1,17 +1,41 @@
 .skraningbody {
     display: grid;
+    grid-template-columns: var(--grid-columns);
     padding: var(--spacing-triple) var(--spacing);
     gap: var(--spacing-double);
 
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--spacing-fourth-larger);
+}
+
+form div h6 {
+    display: none;
 }
 
 .skraningcontent div {
     width: var(--fullwidth);
 }
 
+.rowrowtwo {
+    display: flex;
+    align-items: baseline;
+}
+
+.rowrowtwo div {
+    display: flex;
+    gap: var(--spacing-half)
+}
+
 .skraningbody main {
     display: grid;
     gap: var(--spacing-double);
+    grid-column: span var(--grid-columns);
 }
 
 
@@ -26,11 +50,11 @@
 .skraningbody main div div {
     grid-column: span var(--grid-columns);
     gap: var(--spacing-half);
-
+    
 }
 
 .headerdivvv {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -47,17 +71,44 @@
 
 
 .displayxs {
-  font-size: var(--display-xs-fontsize);
+    font-size: var(--display-xs-fontsize);
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     width: var(--fullwidth);
     gap: var(--spacing-slightly-larger);
 }
 
+
+form div label {
+    font-size: var(--text-sm-fontsize);
+    align-self:flex-start
+}
+
+form div input {
+    width: var(--fullwidth);
+    gap: var(--spacing-half);
+    padding: var(--spacing-half-slightly-larger) var(--spacing-half-majorly-larger);
+    border-radius: var(--border-raidus);
+    border-width: var(--button-border-width);
+    border-color: var(--button-border-color-2);
+}
+
+form div input ::placeholder {
+    font-family: var(--font-family-gen);
+    font-size: var(--text-md-fontsize);
+    font-weight: var(--font-weight-regular);
+    color: var(--font-color-text);
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+
 @media (width >600px) 
 {
     .displayxs {
-    font-size: var(--display-sm-fontsize);
+        font-size: var(--display-sm-fontsize);
     }
 }
