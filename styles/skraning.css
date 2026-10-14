@@ -55,6 +55,7 @@ form div label {
     align-self: center;
     gap: var(--spacing-double);
     grid-column: span var(--grid-columns);
+    padding: var(--spacing-hex) var(--spacing-double) var(--spacing-triple) var(--spacing-double);
 }
 
 
