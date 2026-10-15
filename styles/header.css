@@ -1,26 +1,73 @@
 .header{ 
     width:100%;
     background-color: var(--website-backround);
-    border-bottom: 1px solid #f5f5f5; /**laga */
+    border-bottom: 1px solid #f5f5f5;  /** laga */
     font-family: var(--font-family-gen);
     box-sizing: border-box;
     display: flex;
 }
 
-.header innri{ 
-    display: flex; /**Double tékka á flex*/
-    max-width: 1440px;
-    min-height: 80px; /** Er það max-height eða min-height? */
-    margin:0 auto;
-    padding: 0 48px; 
+.innri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:var(--spacing-double);
+    padding-right: var(--spacing-double);
+    padding-left: var(--spacing-double);
     align-items: center;
-    flex-direction:row;
-    align-items: center;
-    box-sizing: border-box;
 }
 
-/*Logo-ið */
-.header Logo{ 
+.innri ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-double);
+    
+}
+
+.innri ul li a {
+    text-decoration: none;
+font-weight: var(--font-weight-semibold);
+font-size: var(--spacing);
+line-height: var(--spacing-larger);
+color: var(--header-text);
+}
+
+
+.innri ul li {
+    list-style: none;
+}
+
+.desktopinnri {
+    display: none;
+}
+
+.dropdownmenunav div div div div button {
+    background-color: var(--website-backround);
+    border-style: none;
+}
+
+
+
+
+.dropdownmenunav div div div div button:hover p {
+display: contents;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.innskraning {
+    background-color: var(--website-backround);
+    border-style: none;
+    color: var(--header-text);
+}
+
+/* Logo-ið */
+
+.logo{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,11 +76,30 @@
     flex-shrink: 0;
 }
 
-.header signup{ 
+.logo span {
+font-weight: var( --font-weight-bold);
+font-size: var(--text-xl-fontsize);
+line-height: var(--display-sm-fontsize);
+color: var(--header-text);
+}
+
+.signup{ 
     background-color: #7F56D9;
     color: white;
     border: none;
-    padding: 10px 18px 10px 18px;
+    padding: var(--spacing-half-slightly-larger) var(--spacing-fourth-larger-triple);
     border-radius: 1px;
 }
 
+@media (width>500px) {
+    .dropdownmenunav {
+        display: none;
+    }
+
+    
+
+.desktopinnri{ 
+    display: contents;/** Double tékka á flex */
+    
+}
+}
