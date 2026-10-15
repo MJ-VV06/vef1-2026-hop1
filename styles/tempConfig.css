@@ -25,14 +25,26 @@
 
   /* spacing stuff, er að gíska að hlutir eru spaced með 8 margföldun töflu */
   --spacing: 16px;
+  --spacing-sixteenth: calc(var(--spacing)/16);/*1px*/
   --spacing-eighth: calc(var(--spacing)/8);
   --spacing-fourth: calc(var(--spacing)/4);
   --spacing-half: calc(var(--spacing)/2);
-  --spacing-half-larger: calc(var(--spacing-half) * 1.5);
-  --spacing-double: calc(var(--spacing) * 2);
-  --spacing-double-larger: calc(var(--spacing-double) * 1.25);
-  --spacing-triple: calc(var(--spacing) * 3);
-  --spacing-quad: calc(var(--spacing) * 4);
+  --spacing-half-larger: calc(var(--spacing-half) * 1.5); /*24*/
+  --spacing-double: calc(var(--spacing) * 2); /*32px*/
+  --spacing-double-larger: calc(var(--spacing) * 1.25); /*20px*/
+  --spacing-double-half: calc(var(--spacing) * 2.5); /*40px*/
+  --spacing-triple: calc(var(--spacing) * 3); /*48px*/
+  --spacing-quad: calc(var(--spacing) * 4); /*64px*/
+  --spacing-hex: calc(var(--spacing)*6);
+  --spacing-fill: calc(var(--spacing) * 23.4375); /*375px*/
+  --spacing-hug-header: calc(var(--spacing) * 21.75); /*348px*/
+  --spacing-hug-team: calc(var(--spacing) * 129.5); /*2,072px*/
+  --spacing-hug-careers: calc(var(--spacing) * 69.5); /*1,112px*/
+  --spacing-hug-newsletter: calc(var(--spacing) * 28); /*448px*/
+  --spacing-hug-header1: calc(var(--spacing) * 13.75); /*220px*/
+  --spacing-fill1: calc((var(--spacing) * 21.75)-5); /*343px*/
+
+
 
   /* grid stuff */
   --grid-columns: 12;
