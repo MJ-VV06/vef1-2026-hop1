@@ -38,19 +38,34 @@ color: var(--header-text);
 }
 
 .desktopinnri {
+    position: absolute;
     display: none;
+    
+}
+
+.logo div {
+    width: fit-content;
 }
 
 .dropdownmenunav div div div div button {
     background-color: var(--website-backround);
     border-style: none;
+    width: fit-content;
+
+}
+
+.dropdownmenunav div div div div {
+    width: fit-content;
 }
 
 
+.dropdownmenunav div div div div button p {
+display: none;
+}
 
-
-.dropdownmenunav div div div div button:hover p {
-display: contents;
+.dropdownmenunav div div div div button:hover .desktopinnri{
+display: flex;
+flex-direction: column;
 }
 
 .buttons {
