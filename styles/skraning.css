@@ -1,0 +1,221 @@
+.skraningbody {
+    display: grid;
+    grid-template-columns: var(--grid-columns);
+    padding: var(--spacing-triple) var(--spacing);
+    gap: var(--spacing-double);
+
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--spacing-fourth-larger);
+}
+
+form div h6 {
+    display: none;
+}
+
+form div label {
+    font-size: var(--text-sm-fontsize);
+    align-self:flex-start
+}
+
+.skraningcontent div {
+    width: var(--fullwidth);
+}
+
+.rowrowtwo div {
+    display: flex;
+    gap: var(--spacing-half);
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.rowrowtwo div label {
+    font-size: var(--text-sm-fontsize);
+}
+
+.rowrowtwo a {
+    font-size: var(--text-sm-fontsize);
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-half);
+    display: flex;
+}
+
+
+.skraningbody main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: var(--spacing-double);
+    grid-column: span var(--grid-columns);
+    padding: var(--spacing-hex) var(--spacing-double) var(--spacing-triple) var(--spacing-double);
+}
+
+
+.headerdivvv div {
+    grid-column: span var(--grid-columns);
+    display: flex;
+    flex-flow: wrap row;
+    
+    /* gap: var(--spacing-half); 
+
+    width: var(--fullwidth);    */
+    
+}
+
+.skraninglogoo {
+    gap: var(--spacing-larger);
+    width: var(--fullwidth);
+}
+
+
+.skraninglogoo div {
+    justify-content: center;
+    width: var(--fullwidth);
+    flex-direction: column;
+}
+
+.skraningbody main div { 
+    grid-column: span var(--grid-columns);
+    align-items: center;
+    
+}
+
+
+
+
+
+.headerdivvv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skraningcontent {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--spacing-half-larger);
+    gap: var(--spacing-larger);
+    
+}
+
+
+.displayxs {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: var(--fullwidth);
+    gap: var(--spacing-slightly-larger);
+}
+
+
+
+form div input {
+    width: var(--fullwidth);
+    gap: var(--spacing-half);
+    padding: var(--spacing-half-slightly-larger) var(--spacing-half-majorly-larger);
+    border-radius: var(--border-raidus);
+    border-width: var(--button-border-width);
+    border-color: var(--button-border-color-2);
+    border-style: solid;
+}
+
+form div input ::placeholder {
+    font-family: var(--font-family-gen);
+    font-size: var(--text-md-fontsize);
+    font-weight: var(--font-weight-regular);
+    color: var(--font-color-text);
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.rowrowtwo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+
+.skraningaction {
+    gap: var(--spacing);
+    display: flex;
+    flex-direction: column;
+}
+
+.skraningaction button {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-half-slightly-larger) var(--spacing-fourth-larger-triple);
+    gap: var(--spacing-half);
+}
+
+.skraningfinal {
+    display: flex;
+    gap: var(--spacing-fourth);
+    justify-content: center;
+    width: var(--fullwidth);
+}
+
+.skraningfinal p {
+    font-size: var(--text-sm-fontsize);
+
+}
+
+.skraningfinal a {
+    display: flex;
+    font-size: var(--text-sm-fontsize);
+    color: var(--font-color-smallhead);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    gap: var(--spacing-half);
+}
+
+.skraningtitle {
+        gap: var(--spacing-half);
+    }
+
+@media (width >500px) 
+{
+    .skraningbody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding: var(--spacing-hex) var(--spacing-double) var(--spacing-triple);
+    }
+
+    .skraningtitle {
+        gap: var(--spacing-half-larger);
+    }
+
+    .displayxs {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    }
+
+    .headerdivvv {
+        width: var(--fixed-skraning);
+    }
+}
