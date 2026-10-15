@@ -1,6 +1,7 @@
 .footer { 
     grid-area: footer;
-    text-align: center;
+    display: flex;
+    align-items: center;
     background-color: var(--website-background);
     justify-content: center;
     padding-right: 32px; /**laga */
