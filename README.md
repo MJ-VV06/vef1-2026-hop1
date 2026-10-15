@@ -8,7 +8,7 @@ Verkefnið er byggt úr html og css síðum. Allar html síður fyrir utan _inde
 | - | - | - |
 | Þorvaldur Hrafn | thj162@hi.is | thorvaldurhrafn | 
 | Marijonas Valdas Vark | MVV5@hi.is | MJ-VV06  |
-| Mathilda Evelyne Lauth | | Mathildalauth  |
+| Mathilda Evelyne Lauth | mel18@hi.is | Mathildalauth  |
 | Ella Margret Borgfjörð Roth | emb41@hi.is| ellamargret101  |
 
 
