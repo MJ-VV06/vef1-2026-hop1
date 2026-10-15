@@ -1,0 +1,270 @@
+
+
+.header{
+    row-gap: var(--spacing-quad);
+    padding-top: var(--spacing-quad);
+    padding-bottom: var(--spacing-quad);
+}
+
+.header-heading-support {
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    gap: var(--spacing-double);
+
+}
+
+.header-headings {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing)-4);
+}
+
+.team {
+    padding-bottom: var(--spacing-quad);
+    row-gap: var(--spacing-triple);
+}
+
+.team-section-people {
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    gap: var(--spacing-double-half);
+}
+
+.folk-myndir {
+    width: 100%;
+    height: auto;
+}
+
+.team-texti {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing);
+}
+
+.team-texti p {
+    text-align: left;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing)
+}
+
+.careers {
+    row-gap: var(--spacing-triple);
+    padding-top: var(--spacing-quad);
+    padding-bottom: var(--spacing-quad);
+}
+
+.careers-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    gap: var(--spacing-double);
+}
+
+.careers-texti {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-triple);
+}
+
+.careers-mynd {
+    width: 100%;
+    height: auto;
+}
+
+.careers-vinnur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-double-larger);
+}
+
+.careers-vinnur h3{
+    align-items: flex-start;
+}
+
+.careers-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    align-items: center;
+}
+
+.careers-ibodi {
+    /*stendur að borderinn eigi að vera 1px en þá sést ekkert...*/
+    border-radius: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-double-larger);
+    padding-right: var(--spacing-double-larger);
+    padding-top: var(--spacing-double-larger);
+    padding-bottom: var(--spacing-half-larger);
+    gap: var(--spacing-half-larger);
+}
+
+.careers-post {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-double);
+}
+
+.careers-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-half);
+}
+
+.careers-texti {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.careers-texti p {
+    text-align: left;
+}
+
+.careers-text .lala {
+    justify-content: center;
+    align-items: center;
+}
+
+.careers-text p{
+    text-align: left;
+}
+
+
+.careers-starf {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-double-larger)
+}
+
+.newsletter {
+    background-color: var(--website-background-2);
+    padding-top: var(--spacing-quad);
+    padding-bottom: var(--spacing-quad);
+    row-gap: var(--spacing-triple);
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    gap: var(--spacing-double);
+}
+
+.newsletter-text, .newsletter-email {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+.newsletter-input {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-half);
+}
+.news-inp {
+    display: flex;
+    flex-direction: column;
+}
+/*stækkaði kassann hann er samt ekki með nkl sama padding og á figma en það virkar?*/
+.news-inp {
+    /*sama hér segir að border á að vera 1px*/
+    border-radius: var(--spacing-half);
+    gap: var(--spacing-half);
+    padding-top: calc(var(--spacing));
+    padding-bottom: calc(var(--spacing));
+    padding-right: calc(var(--spacing)-2px);
+    padding-left: var(--spacing);
+    width: 100%;
+    height: auto;
+    border-width: var(--button-border-width);
+}
+
+.header-headings h5 {
+    color: var(--button-background-color-1);
+}
+
+.team-texti h4 {
+    color: var(--button-background-color-1);
+}
+
+.teymid hr {
+    margin-inline: var(--spacing-double);
+}
+
+.lala {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+    background: var(--font-background-smallhead);
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    padding-top: var(--spacing-fourth);
+    padding-bottom: var(--spacing-fourth);
+    border-radius: var(--spacing);
+    color: var(--button-background-color-1);
+}
+@media (width>500px) {
+
+    .teymid section {
+        max-width: 80rem;
+        margin-inline: auto;
+    }
+
+    /*ekki jafni mikið bil á hliðunum og á síðunni kms*/
+    .team-section-people {
+        flex-direction: row;
+        padding-left: var(--spacing-double);
+        padding-right: var(--spacing-double);
+        gap: var(--spacing-quad);
+    }
+
+    .team-section-people > div {
+        min-width: 0;
+    }
+
+    .folk-myndir {
+        aspect-ratio: 280 / 296;
+        object-fit: cover;
+    }
+/*fer ekki í mipju????*/
+    .careers-vinnur {
+        width: 100%;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newsletter-email {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 484px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newsletter-input {
+        flex: 1;
+    }
+
+}
+
