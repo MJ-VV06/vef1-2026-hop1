@@ -1,32 +1,64 @@
 .header{ 
     width:100%;
+    max-width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+
     background-color: var(--website-backround);
     border-bottom: 1px solid #f5f5f5; /**laga */
     font-family: var(--font-family-gen);
     box-sizing: border-box;
+    
     display: flex;
+    flex-direction: column;
+    padding: var(--spacing-half-larger);
 }
 
-.header innri{ 
-    display: flex; /**Double tékka á flex*/
+.header .innri{ 
+    display: flex; 
     max-width: 1440px;
     min-height: 80px; /** Er það max-height eða min-height? */
     margin:0 auto;
     padding: 0 48px; 
+    
     align-items: center;
     flex-direction:row;
-    align-items: center;
     box-sizing: border-box;
 }
 
 /*Logo-ið */
-.header Logo{ 
+.header .Logo{ 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color, #444);
+
     width: 32px;
     height: 32px;
     flex-shrink: 0;
+}
+header .Logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0 0 0 48px;
+  padding: 0;
+}
+
+.header .buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
 }
 
 .header signup{ 
@@ -34,6 +66,51 @@
     color: white;
     border: none;
     padding: 10px 18px 10px 18px;
-    border-radius: 1px;
+    border-radius: 8px;
+
+    display: inline-flex;  //* W3S segir þetta vera best ??*/
+    align-items: center;
+    justify-content: center;
+    width: 119px;
+    height: 44px;
+
+    box-sizing: border-box;
+    text-decoration: none;
 }
+.header login{ 
+    background-color: var(--website-backround);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 127px;
+    height: 44px;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.header .login:hover {
+  background-color: #f5f5f5;
+}
+
+.header-actions { 
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+@media (width < 700px) {
+    .header .innri {
+        padding: 0 16px;
+    }
+    .header ul {
+        display: none;
+    }
+}
+
 
