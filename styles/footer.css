@@ -5,19 +5,54 @@
     justify-content: center;
     padding-right: 32px; /**laga */
     padding-left: 32px; /**laga */
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
 
 }
 .footer yfirfotur{ 
+
+    width: 100%;
+    max-width: 600px;
+}
+.footer .yfirfotur > section{
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);  
     gap: 48px;
-    /**skrifa */
+    width: 600px;
+    height: 132px;
+    max-width: var(--max-width);
+    text-align: left;
 
 }
-@media (width >= 600px) {
-    /**skrifa */
+.footer .undirfotur{ 
+    width: 100%;
+    grid-template-columns: repeat(var(--columns), 1fr);  
+    gap: 48px;
+    width: 600px;
+    height: 132px;
+    max-width: var(--max-width);
+
+}
+footer .undirfotur hr {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 0 0 40px;
+}
+
+@media (width < 600px) {
+    footer .yfirfotur > section {
+        grid-template-column: 1fr;
+        gap: 32px;
+    }
+        
 }
 
 .footer ul{ 
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
