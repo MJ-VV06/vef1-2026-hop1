@@ -134,6 +134,7 @@ form div input {
     border-radius: var(--border-raidus);
     border-width: var(--button-border-width);
     border-color: var(--button-border-color-2);
+    border-style: solid;
 }
 
 form div input ::placeholder {
