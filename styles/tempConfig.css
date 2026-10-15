@@ -57,8 +57,11 @@
   /* litir */
   --website-background: #fff;
   --website-background-2: #fafafa;
+  --website-break-color:#FAFAFA;
 
   /* Breiddir */
   --fullwidth: 100%;
   --fixed-skraning: 360px;
+
+
 }
