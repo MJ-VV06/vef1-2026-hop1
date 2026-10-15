@@ -8,8 +8,12 @@
 }
 
 .forsida hr {
-  margin-inline: var(--spacing);
-  color: var(--website-break-color);
+  margin-inline: var(--spacing-double);
+  border-color: var(--website-break-color);
+}
+
+.forsida a {
+  text-decoration: none;
 }
 
 /* Fyrsti hlutur forsíðu */
@@ -203,6 +207,7 @@
   color: var(--button-text-color-2);
   border-color: var(--button-border-color-2);
   border-width: var(--button-border-width);
+  border-style: solid;
 }
 
 @media (width > 500px) {
