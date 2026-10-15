@@ -9,6 +9,7 @@
 
 .forsida hr {
   margin-inline: var(--spacing);
+  color: var(--website-break-color);
 }
 
 /* Fyrsti hlutur forsíðu */
@@ -18,7 +19,6 @@
 }
 
 .hero img { /* skalanlegt */
-  display: block; 
   width: 100%;
   height: auto;
 }
@@ -130,9 +130,10 @@
 }
 
 .simi-mynd{
-  display: block;
-  width: 75%;
+  display: flex;
+  width: 100%;
   height: auto;
+
 }
 
 /* fyrirtæki partur er smá öðruvísi */
@@ -185,6 +186,14 @@
 
 .cta-takki {
   gap: var(--spacing-half);
+}
+
+.cut-laptop {
+  display: none;
+}
+
+.forsida-laptop {
+  display: block;
 }
 
 /* hinn takki style, kannski ætti að fara á util.css */
@@ -263,12 +272,10 @@
     align-self: center;
   }
 
-  .simi {
-    width: 244px;
-  }
 
   .spjaldtalva-mynd {
     display: block;
+    width: 100%;
   }
 
   .cta-takki {
@@ -280,5 +287,17 @@
 
   .cta-takki button {
     width: auto;                     
+  }
+
+  .cut-laptop {
+    display: block;
+  }
+
+  .forsida-laptop {
+    display: none;
+  }
+
+  .simi-mynd{
+    display: none;
   }
 }
