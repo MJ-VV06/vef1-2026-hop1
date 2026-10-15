@@ -1,34 +1,34 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- ÞETTA ER HEADER SEM ER NOTAÐ Í ALLAR SÍÐUR -->
+    <!-- ÞETTA ER MENUIÐ SEM ER NOTAÐ Í ALLAR SÍÐUR -->
     <!-- Vandarmálið er að við þurfum að not JS til að "importa" á síðunar, þannig ég ætla að geyma þetta hérna, og við tölum saman hvernig við notum JS-->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
   </head>
   <body>
-    <header>
+    <!-- problem: setti örugglega of mikið divs-->
+
+    <nav>
       <div class="innri">
-        <section>
-              <nav> 
-                <ul>
-                  <li><strong>Forsíða</strong></li>
-                  <li><a href="/index.html">Forsíða</a></li>
-                  <li><a href="sidur/teymid.html">Teymið</a></li>
-                  <li><a href="sidur/menu.html">Forritið</a></li>
-                </ul>
-              </nav>
-        </section>
+        <!-- Þetta verður örugglega position absoulute, top left á síðuna-->
+        <div class="Logo">
+          <img src="../myndir/Logos/CompanyLogo.png" alt="Logo fyrirtækið" />
+          <span>Forritið</span>
         </div>
 
-        <section>
-          <div class ="action">
-            <a class="login" href="sidur/skraning.html">Innskráning</a>
-            <a class="signup" href="sidur/skraning.html">Skráðu þig</a>
-          </div>
-        </section>
-      </header>
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="./teymid.html">Teymið]</a></li>
+          <li><a href="">Forritið</a></li>
+        </ul>
+
+        <div>
+          <button><a href="./skraning.html">Innskráning</a></button>
+          <button><a href="./skraning.html">Skráðu þig</a></button>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
