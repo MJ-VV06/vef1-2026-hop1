@@ -1,6 +1,6 @@
 .footer { 
-    grid-area: footer;
     display: flex;
+    grid-area: footer;
     align-items: center;
     background-color: var(--website-background);
     justify-content: center;
@@ -15,7 +15,8 @@
 
 }
 .footer .yfirfotur{ 
-
+    
+    display: grid;
     width: 100%;
     max-width: 1200px;
 }
