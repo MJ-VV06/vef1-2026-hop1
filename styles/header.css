@@ -19,8 +19,10 @@
 
 .innri ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: var(--spacing-double);
+    text-align: left;
+    width: 100%;
     
 }
 
@@ -35,6 +37,7 @@ color: var(--header-text);
 
 .innri ul li {
     list-style: none;
+    
 }
 
 .desktopinnri {
@@ -59,18 +62,39 @@ color: var(--header-text);
 }
 
 
-.dropdownmenunav div div div div button p {
-display: none;
-}
+
+
 
 .dropdownmenunav div div div div button:hover .desktopinnri{
 display: flex;
 flex-direction: column;
+right: 0;
+width: var(--fullwidth);
+}
+
+.dropdownmenunav div div div div button:hover .desktopinnri div{
+display: flex;
+flex-direction: column;
+width: var(--fullwidth);
+padding-top: var(--spacing-larger);
+padding-bottom: var(--spacing-larger);
+}
+
+.dropdownmenunav div div div div div:hover .desktopinnri div ul{
+display: flex;
+flex-direction: column;
+width: var(--fullwidth);
+text-align: left;
+.dropdownmenunav div div div div div:hover .desktopinnri div div {
+    border-style: double;
+
+}
+
 }
 
 .buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
 }
 
@@ -86,8 +110,8 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: var(--spacing-double);
+    height: var(--spacing-double);
     flex-shrink: 0;
 }
 
@@ -106,7 +130,15 @@ color: var(--header-text);
     border-radius: 1px;
 }
 
-@media (width>500px) {
+@media (width>600px) {
+    .innri {
+        flex-direction: row;
+    }
+    
+    .buttons {
+        flex-direction: row;
+    }
+
     .dropdownmenunav {
         display: none;
     }
@@ -116,5 +148,9 @@ color: var(--header-text);
 .desktopinnri{ 
     display: contents;/** Double tékka á flex */
     
+}
+
+.innri ul {
+    flex-direction: row;
 }
 }
