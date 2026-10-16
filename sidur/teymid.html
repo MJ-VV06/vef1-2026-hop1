@@ -84,6 +84,14 @@
                     </div>
 
         </section>
+        <script> 
+    fetch("header.html")
+    .then(response => response.text())
+      .then(data => myDisplayer(data, "header"));
+        function myDisplayer(text, id) {
+        document.getElementById(id).innerHTML = text;
+}
+</script>
 
         <section class="team container grid-1">
 
@@ -361,6 +369,14 @@
 
 
     </main>
+    <script> 
+    fetch("footer.html")
+    .then(response => response.text())
+      .then(data => myDisplayer(data, "footer"));
+        function myDisplayer(text, id) {
+        document.getElementById(id).innerHTML = text;
+}
+</script>
 </body>
 
 </html>
