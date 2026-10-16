@@ -1,12 +1,11 @@
 .footer { 
     display: flex;
-    grid-area: footer;
     align-items: center;
     background-color: var(--website-background);
     justify-content: center;
     padding-right: 32px; /**laga */
     padding-left: 32px; /**laga */
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 64px;
 
@@ -14,46 +13,48 @@
     box-sizing: border-box;
 
 }
-.footer .yfirfotur{ 
+.footer yfirfotur{ 
     
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
+    gap: var(--spacing-between);
 }
-.footer .forritid .fyrirtaeki .samfelagsmidlar{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
+.footer forritid
+fyrirtaeki
+samfelagsmidlar{
+    margin: 10px;
+    border: 20px;
+    padding-right: 32px;
+    padding-left: 32px;
     gap: 48px;
 
-    width: 100%;
-    max-width: var(--max-width);
-    text-align: left;
-    margin: 0 auto;
-
 }
-.footer .undirfotur{ 
+.footer undirfotur{ 
     width: 100%;
     grid-template-columns: repeat(var(--columns), 1fr);  
     width: 600px;
     max-width: var(--max-width,1200px);
 
 }
-footer .undirfotur hr {
+.footer undirfotur hr {
   border: 0;
   border-top: 1px solid #e5e5e5;
   margin: 0 0 40px;
 }
-
+    
 @media (width < 600px) {
     .footer{
         padding: 48px 24px 32px;
         gap: 40px;
     }
-    footer .yfirfotur > section {
+    footer yfirfotur > section {
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    .footer .undirfotur section > div {
+    .footer undirfotur section > div {
         align-items: flex-start;
         flex-direction: column;
         gap: 16px;
