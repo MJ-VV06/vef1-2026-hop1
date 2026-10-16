@@ -7,7 +7,65 @@
 </head>
 
 <body>
+<div class="dropdownmenunav">
+      <div>
+        <div>
+          <div class="innri">
+            <!-- Þetta verður örugglega position absoulute, top left á síðuna-->
+            <div class="logo">
+              <img
+                src="../myndir/Logos/CompanyLogo.png"
+                alt="Logo fyrirtækið"
+              />
+              <span>Forritið</span>
+            </div>
+            <div>
+              <button>
+                <img src="../myndir/Logos/menu.svg" alt="" />
+                <nav class="desktopinnri">
+                  <div class="innri">
+                    <!-- Þetta verður örugglega position absoulute, top left á síðuna-->
+                   
 
+                    <ul>
+                      <li><a href="../index.html">Forsíða</a></li>
+                      <li><a href="./teymid.html">Teymið</a></li>
+                      <li><a href="">Forritið</a></li>
+                    </ul>
+
+                    <div class="buttons">
+                      <!--
+                      <button class="innskraning">Innskráning</button>
+                      <button>Skráðu þig</button>-->
+                    </div>
+                  </div>
+                </nav>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="desktopinnri">
+      <div class="innri">
+        <!-- Þetta verður örugglega position absoulute, top left á síðuna-->
+        <div class="logo">
+          <img src="../myndir/Logos/CompanyLogo.png" alt="Logo fyrirtækið" />
+          <span>Forritið</span>
+        </div>
+
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="./teymid.html">Teymið</a></li>
+          <li><a href="">Forritið</a></li>
+        </ul>
+
+        <div class="buttons">
+          <button class="innskraning">Innskráning</button>
+          <button>Skráðu þig</button>
+        </div>
+      </div>
+    </nav>
     <main class="teymid">
 
         <section class="header container grid-1">
@@ -26,6 +84,14 @@
                     </div>
 
         </section>
+        <script> 
+    fetch("header.html")
+    .then(response => response.text())
+      .then(data => myDisplayer(data, "header"));
+        function myDisplayer(text, id) {
+        document.getElementById(id).innerHTML = text;
+}
+</script>
 
         <section class="team container grid-1">
 
@@ -303,6 +369,14 @@
 
 
     </main>
+    <script> 
+    fetch("footer.html")
+    .then(response => response.text())
+      .then(data => myDisplayer(data, "footer"));
+        function myDisplayer(text, id) {
+        document.getElementById(id).innerHTML = text;
+}
+</script>
 </body>
 
 </html>

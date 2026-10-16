@@ -1,0 +1,158 @@
+.header{ 
+    width:100%;
+    background-color: var(--website-backround);
+    border-bottom: 1px solid #f5f5f5;  /** laga */
+    font-family: var(--font-family-gen);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.innri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:var(--spacing-double);
+    padding-right: var(--spacing-double);
+    padding-left: var(--spacing-double);
+    align-items: center;
+}
+
+.innri ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-double);
+    text-align: left;
+    width: 100%;
+    
+}
+
+.innri ul li a {
+    text-decoration: none;
+font-weight: var(--font-weight-semibold);
+font-size: var(--spacing);
+line-height: var(--spacing-larger);
+color: var(--header-text);
+}
+
+
+.innri ul li {
+    list-style: none;
+    
+}
+
+.desktopinnri {
+    position: absolute;
+    display: none;
+    
+}
+
+.logo div {
+    width: fit-content;
+}
+
+.dropdownmenunav div div div div button {
+    background-color: var(--website-backround);
+    border-style: none;
+    width: fit-content;
+
+}
+
+.dropdownmenunav div div div div {
+    width: fit-content;
+}
+
+
+
+
+
+.dropdownmenunav div div div div button:hover .desktopinnri{
+display: flex;
+flex-direction: column;
+right: 0;
+width: var(--fullwidth);
+background-color: var(--website-backround);
+z-index: 1;
+}
+
+.dropdownmenunav div div div div button:hover .desktopinnri div{
+display: flex;
+flex-direction: column;
+width: var(--fullwidth);
+padding-top: var(--spacing-larger);
+padding-bottom: var(--spacing-larger);
+}
+
+.dropdownmenunav div div div div div:hover .desktopinnri div ul{
+display: flex;
+flex-direction: column;
+width: var(--fullwidth);
+text-align: left;
+.dropdownmenunav div div div div div:hover .desktopinnri div div {
+    border-style: double;
+
+}
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.innskraning {
+    background-color: var(--website-backround);
+    border-style: none;
+    color: var(--header-text);
+}
+
+/* Logo-ið */
+
+.logo{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--spacing-double);
+    height: var(--spacing-double);
+    flex-shrink: 0;
+}
+
+.logo span {
+font-weight: var( --font-weight-bold);
+font-size: var(--text-xl-fontsize);
+line-height: var(--display-sm-fontsize);
+color: var(--header-text);
+}
+
+.signup{ 
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    padding: var(--spacing-half-slightly-larger) var(--spacing-fourth-larger-triple);
+    border-radius: 1px;
+}
+
+@media (width>600px) {
+    .innri {
+        flex-direction: row;
+    }
+    
+    .buttons {
+        flex-direction: row;
+    }
+
+    .dropdownmenunav {
+        display: none;
+    }
+
+    
+
+.desktopinnri{ 
+    display: contents;/** Double tékka á flex */
+    
+}
+
+.innri ul {
+    flex-direction: row;
+}
+}

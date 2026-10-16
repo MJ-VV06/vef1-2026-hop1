@@ -1,0 +1,23 @@
+.footer { 
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--website-background);
+    justify-content: center;
+    padding-right: 32px; /**laga */
+    padding-left: 32px; /**laga */
+
+}
+.footer yfirfotur{ 
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);  
+    gap: 48px;
+    /**skrifa */
+
+}
+@media (width >= 600px) {
+    /**skrifa */
+}
+
+.footer ul{ 
+    list-style: none;
+}
