@@ -73,6 +73,14 @@
     </nav>
     <main class="forsida">
         <!--Bæta við header hér-->
+<script> 
+    fetch("header.html")
+    .then(response => response.text())
+      .then(data => myDisplayer(data, "header"));
+        function myDisplayer(text, id) {
+        document.getElementById(id).innerHTML = text;
+}
+</script>
         <section class="container grid-1 hero" >
 
             <div class="hero-content">
@@ -229,7 +237,15 @@
         </section>
 
     </main>
-
     <!--bæta við footer hér-->
+    <script> 
+    fetch("footer.html")
+    .then(response => response.text())
+      .then(data => myDisplayer(data, "footer"));
+
+        function myDisplayer(text, id) {
+        document.getElementById(id).innerHTML = text;
+}
+</script>
 </body>
 </html>
