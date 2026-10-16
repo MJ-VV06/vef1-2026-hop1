@@ -6,8 +6,7 @@
 
 </head>
 
-<body>
-<div class="dropdownmenunav">
+<body><div class="dropdownmenunav">
       <div>
         <div>
           <div class="innri">
@@ -369,14 +368,53 @@
 
 
     </main>
-    <script> 
-    fetch("footer.html")
-    .then(response => response.text())
-      .then(data => myDisplayer(data, "footer"));
-        function myDisplayer(text, id) {
-        document.getElementById(id).innerHTML = text;
-}
-</script>
+   <footer>
+      <!--Footer er skipt í 2 sections, ein verður með linka á aðra hluti, hinn er undir það og er bara copyright og logo-->
+    <div class="yfirfotur">
+      <section>
+        <div>
+          <p>Forritið</p>
+          <ul>
+            <li><a href="">Yfirlit</a></li>
+            <li><a href="">Virkni</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Fyrirtækið</p>
+          <ul>
+            <li><a href="#">Um okkur</a></li>
+            <li><a href="#">Laus störf</a></li>
+            <li><a href="#">Fjölmiðlar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Samfélagsmiðlar</p>
+          <ul>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+      <!-- "undir" footer-->
+      <div class="undirfotur">
+        <section>
+          <hr />
+
+          <div>
+            <div>
+              <img src="../myndir/Logos/CompanyLogo.png" alt="Logo fyrirtækið" />
+              <span>Forritið</span>
+            </div>
+            <p>© 2099 Forritið.</p>
+          </div>
+        </section>
+      </div>
+    </footer>
 </body>
 
 </html>
